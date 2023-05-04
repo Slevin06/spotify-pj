@@ -1,17 +1,17 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Api;
 
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Routing\Controller as BaseController;
 
-class FormController extends BaseController
+class SpotifyController extends BaseController
 {
     use AuthorizesRequests, ValidatesRequests;
 
     public function index()
     {
-        return view('index');
+        dd('here');
     }
 }
