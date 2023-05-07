@@ -19,4 +19,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::post('/', [SpotifyController::class, 'index']);
+//Route::get('/to-spotify-login', [SpotifyController::class, 'toSpotifyLogin']);

@@ -120,6 +120,10 @@
       <path value="$PROJECT_DIR$/src/vendor/psr/event-dispatcher" />
       <path value="$PROJECT_DIR$/src/vendor/laravel/ui" />
       <path value="$PROJECT_DIR$/src/vendor/composer" />
+      <path value="$PROJECT_DIR$/src/vendor/league/oauth1-client" />
+      <path value="$PROJECT_DIR$/src/vendor/laravel/socialite" />
+      <path value="$PROJECT_DIR$/src/vendor/socialiteproviders/manager" />
+      <path value="$PROJECT_DIR$/src/vendor/socialiteproviders/spotify" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="8.1" />

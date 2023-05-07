@@ -1,13 +1,13 @@
-import React from "react";
+import React, {Fragment} from "react";
 import {createRoot} from "react-dom/client";
-import Form from './Form';
+import SpotifyAuthButton from "./SpotifyAuthButton";
 
 const App = () => {
     return (
-        <>
+        <Fragment>
             <h1>DJ tamayu</h1>
-            <Form/>
-        </>
+            <SpotifyAuthButton/>
+        </Fragment>
     );
 };
 

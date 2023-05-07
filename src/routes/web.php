@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Api\SpotifyController;
 use App\Http\Controllers\FormController;
 use Illuminate\Support\Facades\Route;
 
@@ -18,5 +19,14 @@ use Illuminate\Support\Facades\Route;
 //    return view('welcome');
 //});
 
-Route::get('/', [FormController::class, 'index']);
+
+// TODO: アクセス時にSpotify認証ボタン画面を表示
+Route::get('/', [SpotifyController::class, 'index']);
+
+Route::get('/to-spotify-login', [SpotifyController::class, 'toSpotifyLogin']);
+
+Route::get('/login/spotify/callback', [SpotifyController::class, 'spotifyLoginCallback']);
+
+// TODO: プレイリスト作成フォーム。あとで使うかも
+//Route::get('/', [FormController::class, 'index']);
 
