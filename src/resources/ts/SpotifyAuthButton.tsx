@@ -2,13 +2,13 @@ import React, {Fragment} from "react";
 import {AxiosError, AxiosResponse} from "axios";
 
 // TODO: 型定義はあとで外だし
-interface SpotifyAuthUrlResponse {
-    spotifyAuthUrl: string;
-}
+// interface SpotifyAuthUrlResponse {
+//     spotifyAuthUrl: string;
+// }
 
-interface SpotifyAuthUrlError extends AxiosError {
-    response?: AxiosResponse<any>;
-}
+// interface SpotifyAuthUrlError extends AxiosError {
+//     response?: AxiosResponse<any>;
+// }
 
 const SpotifyAuthButton = () => {
 

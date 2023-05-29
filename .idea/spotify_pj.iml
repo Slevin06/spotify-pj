@@ -12,6 +12,7 @@
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/laravel/socialite" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/socialiteproviders/manager" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/socialiteproviders/spotify" />
+      <excludeFolder url="file://$MODULE_DIR$/src/vendor/jwilsson/spotify-web-api-php" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

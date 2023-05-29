@@ -124,6 +124,7 @@
       <path value="$PROJECT_DIR$/src/vendor/laravel/socialite" />
       <path value="$PROJECT_DIR$/src/vendor/socialiteproviders/manager" />
       <path value="$PROJECT_DIR$/src/vendor/socialiteproviders/spotify" />
+      <path value="$PROJECT_DIR$/src/vendor/jwilsson/spotify-web-api-php" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="8.1" />
