@@ -15,6 +15,10 @@ services:
       - '5173:5173' #vite用のportを定義
     volumes:
       - ./src:/var/www/html
+      - ./package.json:/var/www/package.json
+      - ./package-lock.json:/var/www/package-lock.json
+      - ./node_modules:/var/www/node_modules
+      - ./vite.config.js:/var/www/vite.config.js
   db:
     container_name: spotify-pj-db
     build: ./docker/mysql

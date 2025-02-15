@@ -1,15 +1,15 @@
-import {defineConfig} from 'vite';
+import { defineConfig } from 'vite';
 import laravel from 'laravel-vite-plugin';
 import react from '@vitejs/plugin-react';
 
 export default defineConfig({
+    root: '/var/www/html',
+    base: '/',
     server: {
-        host: true,
+        host: '0.0.0.0',
+        port: 5173,
         hmr: {
             host: 'localhost'
-        },
-        watch: {
-            usePolling: false,
         }
     },
     plugins: [
@@ -18,14 +18,16 @@ export default defineConfig({
                 'resources/css/app.css',
                 'resources/ts/app.tsx'
             ],
-            ssr: 'resources/js/ssr.jsx',
             refresh: true,
         }),
         react(),
     ],
+    optimizeDeps: {
+        include: ['react', 'react-dom', 'react-router-dom', 'lucide-react']
+    },
     resolve: {
         alias: {
-            '@': 'resources/ts',
-        },
-    },
+            '@': '/var/www/html/resources/ts'
+        }
+    }
 });

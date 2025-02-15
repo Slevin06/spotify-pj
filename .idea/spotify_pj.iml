@@ -13,6 +13,16 @@
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/socialiteproviders/manager" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/socialiteproviders/spotify" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/jwilsson/spotify-web-api-php" />
+      <excludeFolder url="file://$MODULE_DIR$/src/vendor/carbonphp/carbon-doctrine-types" />
+      <excludeFolder url="file://$MODULE_DIR$/src/vendor/firebase/php-jwt" />
+      <excludeFolder url="file://$MODULE_DIR$/src/vendor/laravel/prompts" />
+      <excludeFolder url="file://$MODULE_DIR$/src/vendor/league/flysystem-local" />
+      <excludeFolder url="file://$MODULE_DIR$/src/vendor/paragonie/constant_time_encoding" />
+      <excludeFolder url="file://$MODULE_DIR$/src/vendor/paragonie/random_compat" />
+      <excludeFolder url="file://$MODULE_DIR$/src/vendor/phpseclib/phpseclib" />
+      <excludeFolder url="file://$MODULE_DIR$/src/vendor/psr/clock" />
+      <excludeFolder url="file://$MODULE_DIR$/src/vendor/spatie/error-solutions" />
+      <excludeFolder url="file://$MODULE_DIR$/src/vendor/symfony/polyfill-php83" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

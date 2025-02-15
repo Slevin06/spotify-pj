@@ -1,18 +1,35 @@
 {
-    "compilerOptions": {
-        "module": "commonjs",
-        "target": "es5",
-        "sourceMap": true,
-        "baseUrl": "./resources/ts",
-        "paths": {
-            "@/*": [
-                "*"
-            ]
-        },
-        "jsx": "react",
-        "lib": ["ES2015", "DOM"],
+  "compilerOptions": {
+    "target": "ES2015",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "lib": [
+      "DOM",
+      "DOM.Iterable",
+      "ESNext"
+    ],
+    "jsx": "react",
+    "sourceMap": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "resources/ts/*"
+      ]
     },
-    "exclude": [
-        "node_modules"
-    ]
+    "esModuleInterop": true,
+    "allowJs": true,
+    "skipLibCheck": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true
+  },
+  "include": [
+    "resources/ts/**/*"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }

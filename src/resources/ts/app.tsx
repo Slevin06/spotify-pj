@@ -1,14 +1,22 @@
-import React, {Fragment} from "react";
+import React from "react";
 import {createRoot} from "react-dom/client";
-import SpotifyAuthButton from "./SpotifyAuthButton";
+import SpotifyAuth from "@/components/Auth/SpotifyAuth";
+import {BrowserRouter, Route, Routes} from "react-router-dom";
+import Form from "./Form";
+import Layout from "@/components/Layout";
 
 const App = () => {
-    return (
-        <Fragment>
-            <h1>DJ tamayu</h1>
-            <SpotifyAuthButton/>
-        </Fragment>
-    );
+  return (
+      <BrowserRouter>
+        <Layout>
+          <Routes>
+            <Route path="/" element={<SpotifyAuth/>}/>
+            <Route path="/form" element={<Form/>}/>
+            <Route path="*" element={<div>Page not found</div>}/>
+          </Routes>
+        </Layout>
+      </BrowserRouter>
+  );
 };
 
 const root = createRoot(

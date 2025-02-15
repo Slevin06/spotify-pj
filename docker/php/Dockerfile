@@ -1,4 +1,4 @@
-FROM php:8.1-fpm-alpine
+FROM php:8.3-fpm-alpine
 
 #vite の npm run dev 時のポート対応
 EXPOSE 5173
@@ -10,9 +10,18 @@ RUN mv composer.phar /usr/local/bin/composer
 # install packages
 RUN apk update
 
+# 依存関係のインストール
+RUN apk add --no-cache \
+    sqlite \
+    sqlite-dev \
+    sqlite-libs
+
 # apk add を複数行に分けないと正常にインストールされないためにわけました
 RUN apk add zip unzip git
 RUN apk add nodejs npm
+
+# シェル関連パッケージの追加
+RUN apk add bash
 
 # install php extensions
 RUN docker-php-ext-install pdo pdo_mysql

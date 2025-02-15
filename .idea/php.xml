@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="LaravelPint">
+    <laravel_pint_settings>
+      <LaravelPintConfiguration tool_path="$PROJECT_DIR$/src/vendor/bin/pint" />
+    </laravel_pint_settings>
+  </component>
   <component name="MessDetectorOptionsConfiguration">
     <option name="transferred" value="true" />
   </component>
@@ -9,6 +14,11 @@
   <component name="PHPCodeSnifferOptionsConfiguration">
     <option name="highlightLevel" value="WARNING" />
     <option name="transferred" value="true" />
+  </component>
+  <component name="PhpCodeSniffer">
+    <phpcs_settings>
+      <phpcs_by_interpreter asDefaultInterpreter="true" interpreter_id="6e790315-c716-4033-93e6-d9f2e129951f" timeout="30000" />
+    </phpcs_settings>
   </component>
   <component name="PhpIncludePathManager">
     <include_path>
@@ -70,7 +80,6 @@
       <path value="$PROJECT_DIR$/src/vendor/symfony/uid" />
       <path value="$PROJECT_DIR$/src/vendor/symfony/translation-contracts" />
       <path value="$PROJECT_DIR$/src/vendor/symfony/translation" />
-      <path value="$PROJECT_DIR$/src/vendor/symfony/polyfill-php72" />
       <path value="$PROJECT_DIR$/src/vendor/symfony/polyfill-ctype" />
       <path value="$PROJECT_DIR$/src/vendor/symfony/polyfill-php80" />
       <path value="$PROJECT_DIR$/src/vendor/phpunit/php-file-iterator" />
@@ -125,9 +134,24 @@
       <path value="$PROJECT_DIR$/src/vendor/socialiteproviders/manager" />
       <path value="$PROJECT_DIR$/src/vendor/socialiteproviders/spotify" />
       <path value="$PROJECT_DIR$/src/vendor/jwilsson/spotify-web-api-php" />
+      <path value="$PROJECT_DIR$/src/vendor/phpseclib/phpseclib" />
+      <path value="$PROJECT_DIR$/src/vendor/firebase/php-jwt" />
+      <path value="$PROJECT_DIR$/src/vendor/paragonie/random_compat" />
+      <path value="$PROJECT_DIR$/src/vendor/paragonie/constant_time_encoding" />
+      <path value="$PROJECT_DIR$/src/vendor/carbonphp/carbon-doctrine-types" />
+      <path value="$PROJECT_DIR$/src/vendor/symfony/polyfill-php83" />
+      <path value="$PROJECT_DIR$/src/vendor/spatie/error-solutions" />
+      <path value="$PROJECT_DIR$/src/vendor/league/flysystem-local" />
+      <path value="$PROJECT_DIR$/src/vendor/laravel/prompts" />
+      <path value="$PROJECT_DIR$/src/vendor/psr/clock" />
     </include_path>
   </component>
-  <component name="PhpProjectSharedConfiguration" php_language_level="8.1" />
+  <component name="PhpProjectSharedConfiguration" php_language_level="8.3" />
+  <component name="PhpStan">
+    <PhpStan_settings>
+      <phpstan_by_interpreter asDefaultInterpreter="true" interpreter_id="6e790315-c716-4033-93e6-d9f2e129951f" timeout="60000" />
+    </PhpStan_settings>
+  </component>
   <component name="PhpStanOptionsConfiguration">
     <option name="transferred" value="true" />
   </component>
@@ -135,6 +159,11 @@
     <phpunit_settings>
       <PhpUnitSettings custom_loader_path="$PROJECT_DIR$/src/vendor/autoload.php" />
     </phpunit_settings>
+  </component>
+  <component name="Psalm">
+    <Psalm_settings>
+      <psalm_fixer_by_interpreter asDefaultInterpreter="true" interpreter_id="6e790315-c716-4033-93e6-d9f2e129951f" timeout="60000" />
+    </Psalm_settings>
   </component>
   <component name="PsalmOptionsConfiguration">
     <option name="transferred" value="true" />
